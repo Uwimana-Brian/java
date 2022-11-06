@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>entrance program</title>
+</head>
+<body>
+    <h1>JavaScript can valid input</h1> 
+
+    <P>please input your age </P>
+
+    <input id="numb">
+
+    <button type="button" onclick="myfunction()">submit</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction(){
+            var x,text;
+
+            // Get the value of the input field with id="numb"
+            x=document.getElementById("Numb").value;
+
+            // If x is Not a Number or less than 18 or greater than 25
+            if (isNAN(x) || x <18 || x >25 ){
+                text="welcome ";
+            }
+            else{
+                text="you are not allowed here";
+            }
+            document.getElementById(demo).innerHTML=text;
+        }
+    </script>
+</body>
+</html>
